@@ -1,7 +1,7 @@
 rows = int(input("Enter the size of the pattern: "))
 
 i = 0
-while i in range(rows):
+while i <= rows:
     j = 0
     for j in range(rows):
         j += 1
