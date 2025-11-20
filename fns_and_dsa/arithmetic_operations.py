@@ -1,9 +1,7 @@
-# It's time do define perform_operation and its parameters num1, num2 and operation.
-
-def  perform_operation(num1,  num2, operation):
+def  perform_operation(num1, num2, operation):
     operaton = operation.lower()
 
-    if operation == "add":              # addition operation is perform right here, follow by other operations
+    if operation == "add":         
         return num1 + num2
     
     elif operation == "subtract":
@@ -13,9 +11,7 @@ def  perform_operation(num1,  num2, operation):
         return num1 * num2
     
     elif operation == "divide":
-        if num2 == 0:                           # division handling zero
+        if num2 == 0:                          
             return "Cannot be divided by Zero"
         return num1 / num2
-    else:
-        return "Invalid operation"
 
