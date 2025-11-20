@@ -1,6 +1,6 @@
 # It's time do define perform_operation and its parameters num1, num2 and operation.
 
-def  perform_operation(num1: float,  num2: float, operation: str):
+def  perform_operation(num1,  num2, operation):
 
     if operation.lower() == "add":              # addition operation is perform right here, follow by other operations
         return num1 + num2
