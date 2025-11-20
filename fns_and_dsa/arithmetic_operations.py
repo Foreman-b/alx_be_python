@@ -1,18 +1,21 @@
 # It's time do define perform_operation and its parameters num1, num2 and operation.
 
 def  perform_operation(num1,  num2, operation):
+    operaton = operation.lower()
 
-    if operation.lower() == "add":              # addition operation is perform right here, follow by other operations
+    if operation == "add":              # addition operation is perform right here, follow by other operations
         return num1 + num2
     
-    elif operation.lower() == "subtract":
+    elif operation == "subtract":
         return num1 - num2
     
-    elif operation.lower() == "multiply":       
+    elif operation == "multiply":       
         return num1 * num2
     
-    elif operation.lower() == "divide":
+    elif operation == "divide":
         if num2 == 0:                           # division handling zero
             return "Cannot be divided by Zero"
-    return num1 / num2
+        return num1 / num2
+    else:
+        return "Invalid operation"
 
