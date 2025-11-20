@@ -13,7 +13,8 @@ def display_current_datetime():
     
     time_delta = timedelta(days=number_of_days)
     future_date = current_date + time_delta
-    formatted_future_date = future_date.strftime("%Y-%m-%d")
-    print(f"Future date: {formatted_future_date}")
+    calculate_future_date = future_date.strftime("%Y-%m-%d")
+    print(f"Future date: {calculate_future_date}")
+    return
 
 display_current_datetime()
