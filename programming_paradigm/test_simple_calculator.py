@@ -15,19 +15,19 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(20, 10), 30)
         # Add more assertions to thoroughly test the add method.
 
-    def test_subtract(self):
+    def test_subtraction(self):
         self.assertEqual(self.calc.subtract(2, 3), -1)
         self.assertEqual(self.calc.subtract(-1, 1), -2)
         self.assertEqual(self.calc.subtract(5, 1), 4)
         self.assertEqual(self.calc.subtract(20, 10), 10)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 1), -1)
         self.assertEqual(self.calc.multiply(5, 1), 5)
         self.assertEqual(self.calc.multiply(4, 5), 20)
 
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(3, 2), 1.5)
         self.assertEqual(self.calc.divide(-1, 1), -1)
         self.assertEqual(self.calc.divide(5, 1), 5)
