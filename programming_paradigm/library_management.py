@@ -28,7 +28,7 @@ class Library:
         self._books.append(book)
     
     def check_out_book(self, title):
-        for book in self._books:
+        for book in self.books:
             if book.title == title:
                 return book.check_out()
             return None
